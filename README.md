@@ -1,1 +1,8 @@
-# Face-mask-detection
+
+Face mask detection using deep learning and OpenCV is a computer vision application that automatically identifies whether a person is wearing a mask in real-time. This system is particularly useful in environments like public spaces or healthcare settings where mask-wearing is essential for safety. The process begins with face detection, where OpenCV, a powerful computer vision library, is used to locate faces in images or video frames. Popular algorithms like Haar cascades or Dlib are employed to identify faces within the captured input.
+
+Once faces are detected, deep learning models, typically convolutional neural networks (CNNs), are used for the classification task. These models are trained on large datasets containing images of people with and without masks. During training, the CNN learns to recognize patterns and features distinguishing mask-wearing individuals from those without masks. Common architectures for this task include MobileNet, ResNet, or simple custom models that offer a balance between performance and computational efficiency.
+
+After training, the face mask detection system can be deployed using OpenCV. In this real-time setup, OpenCV captures frames from a webcam or video feed, detects faces, and then feeds them into the trained deep learning model for classification. The model outputs whether a face is wearing a mask or not. The result is usually displayed with a bounding box around the face, along with a label such as “Mask” or “No Mask.”
+
+By combining OpenCV's real-time face detection capabilities with the power of deep learning for classification, this system provides an effective and efficient solution for monitoring mask compliance in various settings.
